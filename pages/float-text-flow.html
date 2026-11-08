@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Mechanics &amp; BFC</title>
+    <link rel="stylesheet" href="../css/float-text-flow.css">
+</head>
+<body>
+    <p><a href="../index.html">&larr; Zurueck zur Uebersicht</a></p>
+
+    <!-- Paragraph 1: Demonstrates Block Formatting Context via overflow: hidden -->
+    <p id="p1">
+        <span id="span-a">Головні</span>
+        <span id="span-b">переваги</span>
+        <span id="span-c">CSS:</span>
+        більш чистий код - цей код легше підтримувати, він швидше завантажується, він краще оптимізований для пошукових систем;
+        модульний код - правила стилю можуть застосовуватися до безлічі сторінок, однаковий дизайн, код легше підтримувати;
+        сила дизайну - точність контролю (позиціонування, розмір, поля та ін);
+        поділ праці - завдання розробника – розробляти, завдання дизайнера – створювати дизайн;
+        краща доступність - теги більше не використовуються не за призначенням, немає необхідності в позиціонуванні невидимих картинок, користувачі можуть переписувати стильові таблиці автора.
+    </p>
+
+    <!-- Paragraph 2: Demonstrates clearing previous floats -->
+    <p id="p2">
+        Несхвалення більшості елементів форматування HTML, які використовувалися в HTML 4.0, означає, що навіть якщо браузери як і раніше підтримують їх, відповідно до рекомендації Консорціуму W3C вони не повинні більше використовуватися. Веб-дизайнерам рекомендується використовувати CSS (Cascading Style Sheets – каскадні таблиці стилів).
+    </p>
+
+    <!-- Paragraph 3: Demonstrates float: right -->
+    <p id="p3">Правила CSS</p>
+</body>
+</html>

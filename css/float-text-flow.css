@@ -1,0 +1,50 @@
+/* ==========================================================================
+   CSS Float Flow, Margins and BFC Containment
+   ========================================================================== */
+
+#span-a {
+    float: left;
+    background-color: #cfccfc;
+    color: #030030;
+    padding: 1em 1em 15em;
+}
+
+#span-b {
+    float: left;
+    background-color: #ccfccf;
+    color: #003003;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#span-c {
+    float: left;
+    background-color: #fccfcc;
+    color: #300300;
+    padding: 2em 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: -4em;
+}
+
+p {
+    border: 1px solid #f00f00;
+    padding: 1em;
+    background-color: #feff99;
+}
+
+/* Erzeugt einen Block Formatting Context (BFC), um floatende Elemente einzudaemmen */
+#p1 {
+    overflow: hidden;
+}
+
+/* Setzt den linken Fluss zurueck */
+#p2 {
+    clear: left;
+}
+
+/* Floatet das Element an den rechten Rand */
+#p3 {
+    float: right;
+}

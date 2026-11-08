@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Layouts &amp; Mechanics Showcase</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <header class="bg-dark text-white py-5 mb-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-4 font-weight-bold">CSS Floating &amp; Positioning Mechanics</h1>
+            <p class="lead mb-0">Untersuchung von Elementumfluss, Block Formatting Contexts (BFC) und relativer Zentrierung</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4 text-primary">1. Textumfluss &amp; Block Formatting Context</h2>
+                        <p class="card-text text-muted flex-grow-1">
+                            Demonstration von <code>float: left</code>, <code>float: right</code>, Flussunterbrechungen via <code>clear: left</code> sowie der Eindämmung floatender Kindelemente durch <code>overflow: hidden</code>.
+                        </p>
+                        <a href="pages/float-text-flow.html" class="btn btn-primary mt-auto">Demo oeffnen &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title h4 text-primary">2. Horizontales Float-Menue (Zentrierung)</h2>
+                        <p class="card-text text-muted flex-grow-1">
+                            Implementierung des klassischen zweistufigen Zentrierungsverfahrens fuer Navigationsleisten unbekannter Breite mittels gegenlaeufiger relativer Verschiebung (<code>left: 50%</code> und <code>left: -50%</code>).
+                        </p>
+                        <a href="pages/float-centered-menu.html" class="btn btn-primary mt-auto">Demo oeffnen &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-muted py-4 border-top mt-5">
+        <small>&copy; 2024–2026 Yevhen Biezhyn &middot; CSS Layout &amp; Architecture Showcase</small>
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
